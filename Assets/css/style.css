@@ -5,7 +5,6 @@ body {
 }
 
 /* --------------------- Navbar */
-
 .navbar-nav {
     position: absolute;
     left: 50%;
@@ -40,15 +39,18 @@ nav ul li {
 }
 .welcome-heading {
     color: #fffff2;
+    text-align: center;
 }
 .welcome-heading span {
-    font-size: 100px;
+    font-size: 70px;
     display:block;
-    opacity: 1;
     text-align: center;
     font-family: 'Pacifico', cursive;
 }
-/* --------------------- Home Page */
+/* --------------------- General */
+.landing-container {
+    margin-bottom: 15px;
+}
 .center-align {
     text-align:center;
 }
@@ -57,13 +59,35 @@ nav ul li {
     margin-right: 30%;
     background-color: #DEFFDC;
 }
-.about-heading, .contact-heading {
-    margin-top: 10px;
+.about-heading, .contact-heading, .bike-rental-heading {
+    margin-top: 15px;
 }
 .about-para {
     padding-top:15px;
 }
-
+.contact-form, .about-section {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.contact-button {
+    background-color: #008000;
+}
+.spacer {
+    margin-bottom: 26px;
+}
+.bike-rental-container {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+.google-maps {
+    border:4px solid #DEFFDC;
+}
+.bike-rental-margin {
+    margin-bottom: 50px;
+}
 
 /* --------------------- Bike Animations */
 .fa-bicycle {
@@ -140,6 +164,8 @@ footer {
     background-color: #DEFFDC;
     height:50px;
     margin-top:0px;
+    padding:0px;
+    font-size: 0;
 }
 
 footer ul li i {
@@ -160,6 +186,7 @@ footer p span {
 
 
 /* --------------------- Media Queries */
+/* -------animation mqs */
 @media screen and (min-width:200px) {.inline-grass-1 {
  display:block!important;
 }}
@@ -199,6 +226,26 @@ footer p span {
  display:block!important;
  left:1700px;
 }}
+
+
+/* -------home page mqs */
+
+@media screen and (min-width:768px) {.contact-form, .about-section {
+    margin-left: 35px;
+    margin-right: 35px;
+}}
+@media screen and (min-width:768px) {.landing-container {
+    margin-bottom: 25px;
+}}
+@media screen and (min-width:768px) {.welcome-heading span {
+    font-size: 100px;
+}}
+
+
+
+
+
+
 
 
 

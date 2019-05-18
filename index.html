@@ -15,19 +15,15 @@
 
 <body>
 	<!-- navbar -->
-	<nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top container-fluid">
+	<nav class="navbar navbar-light bg-light navbar-expand-md fixed-top container-fluid">
 		<!-- button that nav collapses into on small screens -->
 		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="index.html" id="navBarDropdownMenuLink" role="button" data-toggle="dropdown" ariahaspopup="true" ariaexpanded="false">Home</a>
-					<div class="dropdown-menu" aria-labelledby="navBarDropdownMenuLink">
-						<a class="dropdown-item" href="index.html">Welcome</a>
-						<a class="dropdown-item" href="/">About</a>
-						<a class="dropdown-item" href="/">Contact</a>
-					</div>
+				<li class="nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>
+				<li class="nav-item mr-2"><a class="nav-link" href="index.html#1234">About</a></li>
 				</li>
 				<li class="nav-item mr-2"><a class="nav-link" href="bike-rental.html">Bike Rental</a></li>
 				<li class="nav-item mr-2"><a class="nav-link" href="places-of-interest.html">Places Of Interest</a></li>
@@ -40,6 +36,7 @@
 					</div>
 				</li>
 				<li class="nav-item mr-2"><a class="nav-link" href="map.html">Map</a></li>
+				<li class="nav-item mr-2"><a class="nav-link" href="index.html#5678">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -49,25 +46,54 @@
 			<h1 class="welcome-heading">Welcome to the Waterford <span>Greenway</span></h1>
 		</div>
 	</header>
-	<section class="row container-fluid no-gutters">
+	<section class="row container-fluid no-gutters landing-container">
 		<div class="col-lg-6 center-align">
+			<p id="1234" class="spacer">&nbsp;</p>
 			<h2 class="about-heading">About</h2>
 			<hr class="linebreak-underline">
-			<p class="about-para">The Waterford Greenway, also known locally as the Déise Greenway, is a Rail trail in County Waterford, Ireland, used for cycling and hiking. It opened on March 2017, on what was originally the Mallow/Waterford railway line, and forms part of EuroVelo
-				1 route, which passes through Norway, Scotland, Ireland, Wales, England, France, Spain and Portugal.<br> The Waterford Greenway features 11 bridges, three viaducts and a 400-metre tunnel and runs between the city of Waterford, Mount Congreve, Kilmeaden,
-				Kilmacthomas, and Dungarvan, and passes along part of the Copper Coast. At 46km, it is Ireland's longest greenway.[2] The Waterford & Suir Valley Railway shares the route along the banks of River Suir. In December 2017, it was announced that over
-				250,000 had used the new route since it opened in March.</p>
+			<section class="about-section">
+				<p class="about-para">The Waterford Greenway, also known locally as the Déise Greenway, is a Rail trail in County Waterford, Ireland, used for cycling and hiking. It opened on March 2017, on what was originally the Mallow/Waterford railway line, and forms part of EuroVelo
+					1 route, which passes through Norway, Scotland, Ireland, Wales, England, France, Spain and Portugal.<br> The Waterford Greenway features 11 bridges, three viaducts and a 400-metre tunnel and runs between the city of Waterford, Mount Congreve, Kilmeaden,
+					Kilmacthomas, and Dungarvan, and passes along part of the Copper Coast. At 46km, it is Ireland's longest greenway. The Waterford & Suir Valley Railway shares the route along the banks of River Suir. In December 2017, it was announced that over
+					250,000 had used the new route since it opened in March.</p>
+			</section>
 		</div>
-		<div class="col-lg-6 center-align">
+		<div class="col-lg-6 center-align contact-box">
+			<p id="5678" class="spacer">&nbsp;</p>
 			<h2 class="contact-heading">Contact</h2>
 			<hr class="linebreak-underline">
-			<div class="modal-body">
-                            <p>You can take this paragraph out & put a form in asking for details & with a submit</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
+			<form class="contact-form">
+
+				<div class="form-group">
+					<!-- Name field -->
+					<input class="form-control" id="name" name="name" type="text" placeholder="Name" required/>
+				</div>
+
+				<div class="form-group">
+					<!-- Email field -->
+					<input class="form-control" id="email" name="email" type="email" placeholder="Email Address" required/>
+				</div>
+
+				<div class="input-group mb-3">
+					<select class="custom-select" id="inputGroupSelect02">
+    				<option selected>-What's your message in relation to?-</option>
+				    <option value="1">I require further tourist information</option>
+				    <option value="2">I have a business related query</option>
+				    <option value="3">I wish to request an amendment to this site</option>
+				    <option value="4">Other</option>
+				  </select>
+				</div>
+
+				<div class="form-group">
+					<!-- Message field -->
+					<textarea class="form-control" cols="40" id="message" name="message" rows="10" placeholder="Message" required></textarea>
+				</div>
+
+				<div class="form-group">
+					<button class="btn btn-primary contact-button" name="submit" type="submit">Submit</button>
+				</div>
+
+			</form>
 		</div>
 	</section>
 
@@ -93,7 +119,7 @@
 		<img src="Assets/images/tree-icon.jpg" alt="grass icon" class="d-none tree-icon-3"></img>
 	</div>
 	<!-- footer -->
-	<footer class="container-fluid">
+	<footer class="container-fluid no-gutters">
 		<div class="row">
 			<div class="col-4 offset-4 text-center margin">
 				<ul class="list-inline">
