@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Pacifico&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 /* --------------------- Navbar */
+
 .navbar-nav {
     position: absolute;
     left: 50%;
@@ -12,20 +13,133 @@ body {
     margin-top:20px;
     white-space: nowrap;
     padding-top: 5px;
+    background-color: #FFFFFF;
+    width:100vw;
+    align-content:center;
 }
 nav ul li {
     margin-left: 15px;
     margin-right: 15px;
+    color:#FFFFF0;
+}
+/* --------------------- Header */
+.background { 
+  background: url("../images/greenway-2.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100vh;
+  opacity: 0.25;
+  filter: alpha(opacity=50);
+  /* Flexbox */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+.welcome-heading {
+    color: #fffff2;
+}
+.welcome-heading span {
+    font-size: 100px;
+    display:block;
+    opacity: 1;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+/* --------------------- Home Page */
+.center-align {
+    text-align:center;
+}
+.linebreak-underline {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #DEFFDC;
+}
+.about-heading, .contact-heading {
+    margin-top: 10px;
+}
+.about-para {
+    padding-top:15px;
 }
 
 
+/* --------------------- Bike Animations */
+.fa-bicycle {
+    color:#212529;
+}
 
+.bike-animation-container {
+    padding:0px;
+}
+
+.bike-animation-icon-3 {
+    font-size:40px;
+    vertical-align: bottom;
+    animation-name: bike-animation-3;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+@keyframes bike-animation-3 {
+    from {transform: translate(-5px, 0px) }
+    to {transform: translate(105vw, 0px)}
+}
+.bike-animation-icon-1 {
+    font-size:30px;
+    vertical-align: bottom;
+    animation-name: bike-animation-1;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+@keyframes bike-animation-1 {
+    from {transform: translate(-5px, 0px) }
+    to {transform: translate(105vw, 0px)}
+}
+.bike-animation-icon-2 {
+    font-size:45px;
+    vertical-align: bottom;
+    animation-name: bike-animation-2;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+@keyframes bike-animation-2 {
+    from {transform: translate(-5px, 0px) }
+    to {transform: translate(105vw, 0px)}
+}
+
+.inline-grass-1, .inline-grass-2, .inline-grass-3, .inline-grass-4, .inline-grass-5, .inline-grass-6, .inline-grass-7 {
+    height:40px;
+    width: 40px;
+    vertical-align: bottom;
+    position: absolute;
+    top:12px;
+}
+.tree-icon-1, .tree-icon-2, .tree-icon-3 {
+    height:50px;
+    width: 50px;
+    vertical-align: bottom;
+    position: absolute;
+    top:-7px;
+}
 /* --------------------- Footer */
 
 footer {
     background-color: #DEFFDC;
     height:50px;
-    margin-top:30px;
+    margin-top:0px;
 }
 
 footer ul li i {
@@ -34,6 +148,7 @@ footer ul li i {
 }
 footer .margin {
     margin-top:15px;
+    white-space: nowrap;
 }
 
 .social-heading {
@@ -42,3 +157,50 @@ footer .margin {
 footer p span {
     font-size:10px;
 }
+
+
+/* --------------------- Media Queries */
+@media screen and (min-width:200px) {.inline-grass-1 {
+ display:block!important;
+}}
+@media screen and (min-width:450px) {.inline-grass-2 {
+ display:block!important;
+ left:400px;
+}}
+@media screen and (min-width:560px) {.tree-icon-2 {
+ display:block!important;
+ left:500px;
+}}
+@media screen and (min-width:750px) {.inline-grass-3 {
+ display:block!important;
+ left:700px;;
+}}
+@media screen and (min-width:960px) {.inline-grass-4 {
+ display:block!important;
+ left:900px;
+}}
+@media screen and (min-width:1080px) {.tree-icon-2 {
+ display:block!important;
+ left:1000px;
+}}
+@media screen and (min-width:1220px) {.inline-grass-5 {
+ display:block!important;
+ left:1150px;
+}}
+@media screen and (min-width:1420px) {.inline-grass-6 {
+ display:block!important;
+ left: 1350px;
+}}
+@media screen and (min-width:1620px) {.inline-grass-7 {
+ display:block!important;
+ left: 1550px;
+}}
+@media screen and (min-width:1770px) {.tree-icon-3 {
+ display:block!important;
+ left:1700px;
+}}
+
+
+
+
+
