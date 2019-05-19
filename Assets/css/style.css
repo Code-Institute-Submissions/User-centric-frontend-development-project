@@ -29,7 +29,7 @@ nav ul li {
   -o-background-size: cover;
   background-size: cover;
   height:100vh;
-  opacity: 0.25;
+  opacity: 0.65;
   filter: alpha(opacity=50);
   /* Flexbox */
   display:flex;
@@ -59,7 +59,7 @@ nav ul li {
     margin-right: 30%;
     background-color: #DEFFDC;
 }
-.about-heading, .contact-heading, .bike-rental-heading {
+.about-heading, .contact-heading, .bike-rental-heading, .poi-heading {
     margin-top: 15px;
 }
 .about-para {
@@ -89,6 +89,92 @@ nav ul li {
     margin-bottom: 50px;
 }
 
+.poi-container {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 0px;
+}
+.section-column {
+    display:table-cell;
+    padding: 0px 30px 0px;
+    float:none;
+}
+.poi-border-item {
+    padding:0em 2em 0em 2em;
+    position:relative;
+}
+.poi-border-item p {
+    padding:0;
+    margin:0;
+}
+.poi-border-item:before {
+    display: none;
+    content:attr(data-location);
+    position:absolute;
+    left:2em;
+    top:50%;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    padding:0;
+    margin:0;
+}
+.poi-border-item:after {
+    display: none;
+    width:12px;
+    height:12px;
+    top:53%;
+    position:absolute;
+    left:-6px;
+    border-radius: 12px;
+    content:'';
+    background-color: #008000;
+}
+.mount-congreve {
+    background: url("../images/mount-congreve.jpg") no-repeat center center fixed;
+}
+.suir-valley {
+   background: url("../images/suir-valley.jpg") no-repeat center center fixed; 
+}
+.kilmacthomas-viaduct {
+   background: url("../images/kilmacthomas-viaduct.jpg") no-repeat center center fixed; 
+}
+.dungarvan-bay {
+    background: url("../images/dungarvan-bay.jpg") no-repeat center center fixed;
+}
+.clonea-beach{
+    background: url("../images/clonea-beach.jpg") no-repeat center center fixed;
+}
+.durrow-tunnel{
+    background: url("../images/durrow-tunnel.jpg") no-repeat center center fixed;
+}
+.dungarvan {
+    background: url("../images/dungarvan.jpg") no-repeat center center fixed;
+}
+.poi-background {
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* Flexbox */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  min-height:300px;
+}
+.section-spacer {
+    height:60px;
+}
+.poi-text {
+    color: #fffff2;
+    text-align: center;
+}
+.poi-spacer{
+    height:40px;
+}
 /* --------------------- Bike Animations */
 .fa-bicycle {
     color:#212529;
@@ -240,6 +326,49 @@ footer p span {
 @media screen and (min-width:768px) {.welcome-heading span {
     font-size: 100px;
 }}
+
+/* -------bike rental mqs */
+@media screen and (min-width:768px) {.google-maps {
+ width:400px;
+}}
+@media screen and (min-width:992px) {.google-maps {
+ width:450px;
+}}
+
+/* -------places of interest mqs */
+
+@media screen and (min-width:768px) {.poi-border-item:before, .poi-border-item:after {
+ display:block
+}}
+@media screen and (min-width:768px) {.poi-border-item {
+ color:black;
+ border-left:solid 1px;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
