@@ -9,10 +9,11 @@ body {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
-    margin-top:20px;
+    margin-top: 5px;
+    padding-top:20px;
     white-space: nowrap;
     padding-top: 5px;
-    background-color: #FFFFFF;
+    background-color: #DEFFDC;
     width:100vw;
     align-content:center;
 }
@@ -174,6 +175,21 @@ nav ul li {
 }
 .poi-spacer{
     height:40px;
+}
+.embedded-map-container iframe {
+    width:80vw;
+    height:80vh;
+}
+.download-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.download-container p{
+    color:#000000
+}
+.fa-download {
+    font-size: 40px;
+    color:#008000;
 }
 /* --------------------- Bike Animations */
 .fa-bicycle {
@@ -344,8 +360,10 @@ footer p span {
  color:black;
  border-left:solid 1px;
 }}
-
-
+@media screen and (min-width:1340px) {.waterford-bike-rental-responsive {
+ -ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;
+ position:relative;width:100%;padding-right:15px;padding-left:15px;
+}}
 
 
 
