@@ -60,7 +60,7 @@ experience issues.
 
 
 DEPLOYMENT
-This website has been deployed on Github Pages - 
+This website has been deployed on Github Pages -  https://paraiccooney.github.io/User-centric-frontend-development-project/
 
 
 CREDITS
